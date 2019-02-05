@@ -1,17 +1,27 @@
 {{ define "main" }}
-<section class="posts h-feed">
 
-{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
+<div id="colophon">
+	<a href="/about">Khaled Abou Alfa</a> is <a href="http://stet.build">writing</a>, <a href="/art">drawing</a> and <a href="/release">designing</a>.
+	Subscribe to my <a href="http://stet.build/ia">monthly newsletter</a> on the built environment.
+	<em>This</em> is my online stream.<hr>
+</div>
+
+<section class="entries">
+
+{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
 {{ range $paginator.Pages  }}
 
-    <article class="post h-entry">
+    <article class="entry">
 	  {{ if .Title }}
-		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+		<h2 class="entry-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 	  {{ end }}
-      <div class="e-content">{{ .Content }}</div>
-      <footer class="post__footer">
-        <small><time class="dt-published" datetime="{{ .Date.Format "Monday, 2 January, 2006" }}"><a href="{{ .Permalink }}" title="Permalink to Microblog post" class="u-url">{{ .Date.Format "Monday, 2 January, 2006" }}</time></a></small>
+      
+      <div class="entry-content">{{ .Content }}</div>
+      
+      <footer class="date">
+        <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-0700" }}"><a href="{{ .Permalink }}" title="Permalink to Microblog post" class="u-url">{{ .Date.Format "Monday, 2 January, 2006" }}</time></a>
       </footer>
+      
     </article>
 
 {{ end }}

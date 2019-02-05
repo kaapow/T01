@@ -1,9 +1,24 @@
-<header class="header" role="banner">
-  <figure class="avatar">
+<header>
+  <section class="Title">
+			<h1 class="Logo"><a href="/">Khaled Abou Alfa</a></h1>
+	</section>
+  
+  	<section class="Nav">
+		<nav class="Primary-Nav">
+			<ul>
+				<li><a href="/archive">Archive</a> / </li>
+				<li><a href="/about">About Khaled</a> / </li>
+				<li><a href="/photos">Photos</a> / </li>
+        <li><a href="/release">Releases</a></li>        
+			</ul>
+		</nav>
+	</section>
+    
+<!--  <figure class="avatar">
     <a href="/"><img src="{{ .Site.Author.avatar }}" alt="{{ .Site.Author.name }}"></a>
   </figure>
   <h1 class="site__name">{{ .Site.Author.name }}</h1>
-
+  
 	{{ range .Site.Menus.main }}
 		{{ if .Page.Params.redirect_url }}
 			<a class="site__page" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a>
@@ -11,5 +26,6 @@
 			<a class="site__page" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
 		{{ end }}
 	{{ end }}
+-->
 
 </header>
