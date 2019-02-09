@@ -1,92 +1,193 @@
-@import "https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Archivo+Narrow:700";
-:root{
---bg:#fafafa;
---text:#3b3b3b;
---site-name:#3b3b3b;
---link:#3b3b3b;
---link-hover:#053ef4;
---date:#d1d1d1;
---table:#DFE5F8;--table-line:#3b3b3b;--thread:#053ef4;--title:#FC5169;--header:#042235;--copyright:#789AF6}
-::-moz-selection{background:#666;color:#fff;text-shadow:none}
-::selection{background:#666;color:#fff;text-shadow:none}
-a{color:#1998e4;text-decoration:none;height:100%}
-a:focus{outline:thin dotted}
-p a:hover,li a:hover{padding:0 0 1px;background-color:#d4efff;border-bottom:1px solid #1998e4}
-p a,li a{padding:0 0 1px;-moz-transition:all .2s linear;-webkit-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}
-html{margin:0;padding:0;height:100%;font-size:100%}
-body{background-color:#fff;color:#243237;font-family: 'Merriweather', Verdana,'Helvetica Neue',helvetica,arial,sans-serif;font-size:1.1rem;line-height:1.618;margin:0;padding:0;height:100%; width: 100%;}
-#container{margin:0;min-height:100%;position:relative}
-header{width:100%;background-color:#042235;text-align:center}
-main {padding-bottom:10rem;margin:2.618rem auto;padding-left:1rem;padding-right:1rem}
-hr:before{content:"* * *"}
-hr{margin-bottom:2.618rem;text-align:center;width:100%;border:none}
-h1,h2,h3,h4,h5{margin:0;font-family:'Archivo Narrow', Charter,'Cormorant','Source Sans Pro';font-weight:900}
-h1{font-size:2.4rem}
-h2{font-size:2rem}
-h2 a{color:#494746}
-h2 a:hover{color:#000;display:block}
-h3{font-size:1.25rem}
-h2,h3,h4{letter-spacing:.02rem}
-p{margin:0 0 1.618rem}
-blockquote,figcaption,nav{margin:1rem 0}
-blockquote p{margin:0;line-height:1.618rem}
-em{font-family:'Merriweather';}
-blockquote p:before{content:'\201C';font-size:1.3em}
-blockquote p:after{content:'\201D';font-size:1.3em}
-nav ul li{display:inline}
-section.Title nav ul{margin:0;padding:0}
-section.Nav{border-bottom:dotted #ccc 1px}
-nav.Primary-Nav ul{padding:0}
-nav.Primary-Nav ul li a{margin-right:15px}
-h1.Logo{background:url(http://static.tumblr.com/ry0jwaj/a0wo7fi89/kaa_logo.png) no-repeat center;background-size:111px 111px;text-indent:-9999px;margin:0 auto}
-h1.Logo a{display:block;width:111px;height:111px;text-decoration:none;margin:0 auto}
-h1.Logo a:hover{background-color:none}
-div.entry-content ul{list-style-type:square;margin:0 0 1.618rem;padding:0;color:#bdbdbd;color:#232323;font-weight:400;padding:0}
-div.entry-content ol{margin:0 0 1.618rem;padding:0;list-style-position:inside;list-style-type:decimal-leading-zero;list-style:none;counter-reset:my-awesome-counter}
-div.entry-content ol li{counter-increment:my-awesome-counter;position:relative}
-div.entry-content ol li:before{content:"0" counter(my-awesome-counter) ".";color:#bdbdbd;font-style:italic;position:absolute;top:.3em;left:-1.618rem;width:1em;line-height:1}
-img.avatar{margin-right:.7rem}
-div.entry-content p img{width:100%;height:auto}
-nav .prev,nav .newer{float:left}
-nav .next,nav .older{float:right}
-#colophon{margin-top:50px;text-align:center}
-article{margin:0 0 4.236rem}
-article footer{margin:0;padding:0 0 3.618rem}
-article footer time,article footer .note-count,article footer .tags{display:inline;padding-right:1.618rem}
-footer.date{color:#BDBDCB}
-article footer .tags{list-style-type:none;padding-left:0}
-article footer .tags li{display:inline;margin-right:.618rem}
-article footer .notes{list-style:none;margin:2.618rem 0;padding:0}
-article footer .notes li{list-style:none;margin:0;font-size:1.1rem}
-article.chat ul{list-style:none;padding:0}
-article.chat ul li{margin:0 0 1rem}
-figure nav{margin-top:0}
-figure img{height:auto;width:100%;margin-bottom:10px}
-figure iframe,figure object,figure video{width:100%}
-header{padding:2.118rem 0}
-header h1{margin-bottom:.236rem;height:160px}
-header.date{margin:4.618rem 0 .875rem;padding:0;background-color:#fff;text-align:left}
-header.date a{color:#BDBDCB;border-bottom:1px dotted #BDBDCB;font-weight:400}
-header.date a:hover{color:#c8c8c8;background-color:#F8F8F8;border-bottom:1px solid #BDBDCB}
-.Title{padding-left:1rem;padding-right:1rem}
-footer nav{clear:both;float:none;margin-bottom:0;margin-top:0}
-footer nav.pagination{height:1.618rem;margin-bottom:2.618rem}
-footer form{float:right}
-#search{bottom:1.618rem;position:relative}
-footer.Footer{font-size:1rem;position:absolute;bottom:0;width:100%;height:6rem;background-color:#BEE2F7;margin:0;padding-top:1.5rem}
-nav.Secondary-Nav a{margin:0 10px 0 0}
-.Copyright,.Secondary-Nav,.Primary-Nav{padding-left:1rem;padding-right:1rem}
-.Copyright p{font-size:1rem}
-ul.tags a{background-color:#c7fbff;border-bottom:none;padding:0 10px 1px;-moz-border-radius:5px;-webkit-border-radius:15px;border-radius:5px;-khtml-border-radius:5px}
-ul.tags{margin-left:20px}
-cite{padding-left:1rem}
-cite:before{content:"— "}
-@media only screen and (min-width:35rem) {
-.Title, main,.Copyright,nav.pagination,.Secondary-Nav,nav.Primary-Nav ul{margin:0 auto;width:54rem}
-.entry {width:50rem;margin:0}
-div.entry-content ol{list-style-position:outside}
+:root {
+    --bg: #fafafa;
+    --text: #3b3b3b;
+    --site-name: #3b3b3b;
+    --link: #3b3b3b;
+    --link-hover: #053ef4;
+    --date: #d1d1d1;
 }
-@media only screen and (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
-h1.Logo{background:url(http://static.tumblr.com/ry0jwaj/SrHoial69/twitter_kaa_pow_header_4.png) no-repeat center;background-size:100px 100px}
-div.entry-content ol{list-style-position:outside}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'libertadregular', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+    padding: 1rem;
+  font-weight: 400;
 }
+
+	h1,h2,h3,h4,h5 {
+		line-height: 1;
+		margin-bottom: 0.618rem;
+		font-family: 'libertadextrabold';
+	}
+
+	h1, h2 {
+		font-size: 1.618rem;
+	}
+h3 {
+font-size: 1.375rem;
+  font-weight: normal;
+  padding: 0;
+}
+h4 {
+  color: var(--date);
+font-weight: normal;
+  padding-bottom: 10px;
+		padding-top: 10px;  
+border-top: 1px dotted var(--date);
+}
+
+	em {
+      		font-family: 'libertaditalic';
+        		font-weight: normal;
+      font-style: normal;
+        	   	}
+strong {
+font-family: 'libertadextrabold';
+font-style: normal;
+}
+
+/* Entries. */
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+footer p, footer.copyright { font-size: 1rem;}
+
+p img {
+    width: 100%;
+    height: auto
+}
+
+article.entry {
+    margin-bottom: 4.618rem;
+}
+
+article.single {
+ min-height: initial; 
+}
+/* Links and how they behave. */
+
+a {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--link);
+    transition: none;
+    font-weight: normal;
+}
+
+a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
+}
+
+header a, header a:hover, nav a, nav a:hover, h2 a, h2 a:hover, .stet a, .stet a:hover {
+    border-bottom: none;
+}
+
+footer.date {margin-top:10px;}
+footer.footer {
+margin-bottom: 5rem;
+  border-top: 1px dotted var(--date) ;
+padding-top: 10px;
+}
+footer.date a {
+  margin-top: 10px;
+    font-size: 1rem;
+    color: var(--date);
+    border-bottom: 1px dotted var(--date);
+}
+
+footer.date a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px dotted var(--link-hover);
+}
+.copyright {font-size: 1rem;}
+.column {
+    width: 100%;
+}
+
+nav ul li, nav ul {
+    list-style: none;
+		padding: 0;
+  margin:0;
+}
+
+#colophon {
+margin-top: 1.2rem;
+}
+
+#colophon img { width:100%;}
+
+		header {
+				margin: 5rem auto;
+		}
+
+h1.Logo a {
+    font-weight: bold;
+}
+
+hr          						{ border: none; padding: 30px 0; text-align: center;}
+hr:before  							{ content: "❦"; text-align: center; font-size: 30px;}
+
+.divider { border-bottom: dotted 1px var(--date); margin: 30px 0; }
+
+	h2.colophon-title, h2.stream-title {
+		border-bottom: 5px solid var(--text);
+		padding-bottom: 10px;
+		padding-top: 30px;    
+	}
+
+	h2.colophon-title,  h2.stream-title, 
+	h2.Logo a {
+
+          	}
+    
+
+@media all and (min-width: 800px) {
+    #container, main {
+        margin: 0 auto;
+ }
+
+		header{
+				width: 56rem;
+				margin: 5rem auto;
+		}
+    main,  footer.footer  {
+        width: 56rem;
+    }
+
+  footer.footer {
+  margin: 0 auto 5rem auto;
+  }
+  
+    .column {
+        float: left;
+    }
+
+    .left {
+        width: 18rem ;
+        padding: 0 2rem 0 0;
+    }
+
+    .right {
+        width: 38rem;
+    }
+
+    main:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    nav {
+        text-align: left;
+    }
+}
+
+
+

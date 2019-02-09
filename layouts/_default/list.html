@@ -1,13 +1,31 @@
 {{ define "main" }}
 
+
+<div class="column left">
+<nav>
+	<ul>
+		<li><a href="/photos">Photos</a></li>      
+		<li><a href="/archive">Archive</a></li>
+		<li><a href="/about">About</a></li>
+	</ul>
+	</nav>
+<hr>
 <div id="colophon">
-	<a href="/about">Khaled Abou Alfa</a> is <a href="http://www.stet.build">writing</a>, <a href="/art">drawing</a> and <a href="/release">designing</a>.
-	Subscribe to my <a href="http://www.stet.build/ia">monthly newsletter</a> on the built environment.
-	<em>This</em> is my online stream.<hr>
+<h4>Projects</h4>
+<div class="stet"><a href="http://www.stet.build/ia"><h3>In Abeyance</h3></a></div>
+	<p>Subscribe to my <a href="http://www.stet.build/ia">monthly newsletter</a> on the built environment.</p>
+<div class="divider"></div>
+<div class="stet">
+	<a href="/c01"><h3>C01 Calendar</h3></a>
+</div>
+	<p>Download an <a href="/c01">actions tracking calendar</a> for 2019.</p>
+
+</div>
 </div>
 
+<div class="column right">
 <section class="entries">
-
+<h4>Online Journal</h4>
 {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 25) }}
 {{ range $paginator.Pages  }}
 
@@ -24,7 +42,10 @@
       
     </article>
 
+
 {{ end }}
 
 </section>
+</div>
 {{ end }}
+
