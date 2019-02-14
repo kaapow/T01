@@ -147,8 +147,19 @@ hr:before  							{ content: "❦"; text-align: center; font-size: 30px;}
 
           	}
     
+						
+#microgram div.photo 				{ width: 90vw; height: 90vw; float: left; margin: 0 0 25px 0;}
+#microgram 							{ margin: 0 auto;  width: 90%; overflow: hidden;}
+#microgram div.photo:hover 			{ cursor: pointer;  opacity: 0.75;}						
 
-@media all and (min-width: 800px) {
+ /*Responsive design - effective only for large screens.*/
+@media all and (max-width: 1024px) and (min-width: 700px) {
+#microgram div.photo 				{ width: 270px;  height: 270px;   float: left; margin: 0 0 25px 25px;}
+#microgram 							{ max-width: 1000px; margin: 0 auto;  width: 90%; overflow: hidden;}
+}
+
+
+@media all and (min-width: 1024px) {
     #container, main {
         margin: 0 auto;
  }
@@ -187,6 +198,8 @@ hr:before  							{ content: "❦"; text-align: center; font-size: 30px;}
     nav {
         text-align: left;
     }
+		#microgram div.photo 				{ width: 300px;  height: 300px;   float: left; margin: 0 0 25px 25px;}
+		#microgram 							{ max-width: 1000px; margin: 0 auto;  width: 90%; overflow: hidden;}
 }
 
 
